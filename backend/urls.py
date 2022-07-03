@@ -16,6 +16,7 @@ urlpatterns = [
 
     # hptel
     path('hotelregister/', RegisterView.as_view(), name='hotelregister'),
+    path('allcustomer/', AllCustomerView.as_view(), name="allcustomer"),
     path('searchcustomer/', SearchCustomerView.as_view(), name="searchcustomer"),
     path('customer_checkin/<str:pk>/', CustomerCheckinView.as_view(), name="customer_checkin"),
     path('hotelhome/', HotelHome.as_view(), name='hotelhome'),
